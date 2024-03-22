@@ -1,0 +1,49 @@
+@keyframes slide {
+    0%{
+      transform: translate3d(-5%, 0, 0);
+    }
+    100%{
+      transform: translate3d(-25%, 0, 0);
+    }
+  }
+
+
+
+  .wrapper{
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+  .sliding-background{
+    background: url('1amcover.jpg');
+    background-size:10%;
+    background-repeat: repeat;
+    height: 100vh;
+    width: 200%;
+    animation: slide 10s linear infinite;
+}
+
+
+
+.parent{
+  display: flex;
+}
+
+.child{
+  margin: auto;
+}
+
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 6%;
+  border-top-width: 1vh;
+  border-top-style: solid;
+  border-top-color: #F2FFD8;
+  background-color: #bdbc7a;
+  opacity: 100%;
+}
